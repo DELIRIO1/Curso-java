@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela 2</title>
+</head>
+<body>
+    <h1>Valor recebido: <span id="valor"></span></h1>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const valor = urlParams.get('valor');
+        const valorElement = document.querySelector('#valor');
+        valorElement.innerText = valor;
+    </script>
+</body>
+</html>
